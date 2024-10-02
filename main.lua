@@ -172,13 +172,13 @@ local Glove = Window:MakeTab({
 Glove:AddButton({
 	Name = "Teleport Get Null Glove (use in null zone)",
 	Callback = function()
-			 game:GetService("TeleportService"):Teleport(14422118326)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5459.34521484375, -189.00048828125, 1845.4388427734375)
 	 end
 })
 
 Glove:AddButton({
 	Name = "Teleport Get Tinkerer Glove (use in null zone)",
 	Callback = function()
-			 game:GetService("TeleportService"):Teleport(14422118326)
+			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4845.7861328125, -214.0004119873047, 799.2669067382812)
 	 end
 })
