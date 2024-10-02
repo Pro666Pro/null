@@ -1,7 +1,7 @@
 local GameName = "pan/null/tinkerer script - by nexer"
 
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({IntroText = "pan/null/tinkerer script :]", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
+local Window = OrionLib:MakeWindow({IntroText = "pan/null/tinkerer script :3", IntroIcon = "rbxassetid://15315284749",Name = GameName, HidePremium = false, SaveConfig = true, ConfigFolder = "Tutorial"})
 
 OrionLib:MakeNotification({Name = "Warning",Content = "Use at your own risk.",Image = "rbxassetid://7733658504",Time = 5})
 
@@ -16,14 +16,14 @@ local TeleportToGames = Teleport:AddSection({
 })
 
 TeleportToGames:AddButton({
-	Name = "The Null Zone (first method)",
+	Name = "The Null Zone (first method, dont work)",
 	Callback = function()
 			 game:GetService("TeleportService"):Teleport(14422118326)
 	 end
 })
 
 TeleportToGames:AddButton({
-	Name = "The Null Zone (second method)",
+	Name = "The Null Zone (second method, probably dont work)",
 	Callback = function()
 local teleportFunc = queueonteleport or queue_on_teleport
 if teleportFunc then
@@ -55,7 +55,14 @@ if teleportFunc then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Pro666Pro/null/main/main.lua'))()
 	]])
 end	
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Workspace.RepressedMemories.SimonSaysGate.Portal.CFrame
+	 end
+})
 
+TeleportToGames:AddButton({
+	Name = "Elude Maze",
+	Callback = function()
+			 game:GetService("TeleportService"):Teleport(11828384869)
 	 end
 })
 
@@ -163,6 +170,13 @@ fireclickdetector(workspace._ugcQuestObjectBobPlushie.ClickDetector)
 	 end
 })
 
+Plush:AddButton({
+	Name = "Teleport To Rob Plushie (use in null zone)",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5257.92333984375, -139.20114135742188, 861.1611938476562)
+	 end
+})
+
 local Glove = Window:MakeTab({
 	Name = "Get Glove",
 	Icon = "rbxassetid://4483345998",
@@ -170,14 +184,14 @@ local Glove = Window:MakeTab({
 })
 
 Glove:AddButton({
-	Name = "Teleport Get Null Glove (use in null zone)",
+	Name = "Teleport Get Null Glove (use in null zone, click giant rob plushie)",
 	Callback = function()
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5459.34521484375, -189.00048828125, 1845.4388427734375)
 	 end
 })
 
 Glove:AddButton({
-	Name = "Teleport Get Tinkerer Glove (use in null zone)",
+	Name = "Teleport Get Tinkerer Glove (use in null zone, click giant rob shoulder pal)",
 	Callback = function()
 			 game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4845.7861328125, -214.0004119873047, 799.2669067382812)
 	 end
